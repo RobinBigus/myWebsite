@@ -2,7 +2,7 @@ import { features } from "../data";
 
 const About = () => {
   return (
-    <section id="about" className="py-16 scroll-m-16 bg-gray-200 select-none">
+    <section id="about" className="scroll-m-16 bg-gray-200 py-16 select-none">
       <div className="section-container">
         <div className="section-heading">
           <h2 className="section-title">About Me</h2>
@@ -11,20 +11,21 @@ const About = () => {
             backend technologies to create comprehensive web solutions.
           </p>
         </div>
-        <dl className="mt-16 space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
+        <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2">
           {features.map((feature) => (
-            <div key={feature.name} className="gradient-bar-vertical">
-              <dt>
-                <p className="text-lg leading-6 font-medium text-gray-900">
+            <div key={feature.name} className="hover-card group">
+              <div className="gradient-bar-horizontal"></div>
+              <div className="p-6">
+                <h3 className="mb-3 text-xl font-semibold text-gray-900">
                   {feature.name}
+                </h3>
+                <p className="leading-relaxed text-gray-600">
+                  {feature.description}
                 </p>
-              </dt>
-              <dd className="mt-2 text-base text-justify text-gray-500 leading-relaxed">
-                {feature.description}
-              </dd>
+              </div>
             </div>
           ))}
-        </dl>
+        </div>
       </div>
     </section>
   );

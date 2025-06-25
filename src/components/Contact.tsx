@@ -5,7 +5,7 @@ import { QuestionIcon, TeamIcon } from "../utils/icons";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-16 scroll-m-16 bg-gray-200 select-none">
+    <section id="contact" className="scroll-m-16 bg-gray-200 py-16 select-none">
       <div className="section-container">
         <div className="section-heading">
           <h2 className="section-title">Get in Touch</h2>
@@ -13,7 +13,7 @@ const Contact = () => {
             Let's discuss how we can work together.
           </p>
         </div>
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-2">
           <div className="hover-card flex flex-col gap-4">
             <div className="gradient-bar-horizontal"></div>
             <div className="flex items-center gap-2">
@@ -24,26 +24,26 @@ const Contact = () => {
             </div>
             <div className="space-y-4">
               <div className="flex items-start gap-3">
-                <HiMail className="text-xl text-indigo-500 mt-1" />
+                <HiMail className="mt-1 text-xl text-indigo-500" />
                 <div>
                   <p className="font-medium text-gray-700">Email</p>
                   <a
                     href="mailto:robin.bigus1604@gmail.com"
-                    className="text-indigo-600 hover:text-indigo-500 "
+                    className="text-indigo-600 hover:text-indigo-500"
                   >
                     robin.bigus1604@gmail.com
                   </a>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <HiLocationMarker className="text-xl text-indigo-500 mt-1" />
+                <HiLocationMarker className="mt-1 text-xl text-indigo-500" />
                 <div>
                   <p className="font-medium text-gray-700">Location</p>
                   <p className="text-gray-600">Bocholt, NRW, Germany</p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
-                <HiClock className="text-xl text-indigo-500 mt-1" />
+                <HiClock className="mt-1 text-xl text-indigo-500" />
                 <div>
                   <p className="font-medium text-gray-700">Availability</p>
                   <p className="text-gray-600">
@@ -53,7 +53,7 @@ const Contact = () => {
               </div>
             </div>
             <div className="mt-6">
-              <h4 className="text-sm font-medium text-gray-500 uppercase tracking-wider mb-4">
+              <h4 className="mb-4 text-sm font-medium tracking-wider text-gray-500 uppercase">
                 Connect with me
               </h4>
               <ul className="flex gap-4">
@@ -61,7 +61,7 @@ const Contact = () => {
                   <li key={link.name}>
                     <a
                       href={link.href}
-                      className="link-hover-light transform hover:scale-110 duration-200"
+                      className="link-hover-light transform duration-200 hover:scale-110"
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={link.name}
@@ -81,12 +81,12 @@ const Contact = () => {
                 Working Together
               </h3>
             </div>
-            <p className="text-gray-600 mb-4">
+            <p className="mb-4 text-gray-600">
               I'm open to discussing various collaboration opportunities:
             </p>
             <div className="space-y-6">
               <div className="flex items-start gap-3">
-                <FaLaptopCode className="text-xl text-indigo-500 mt-1" />
+                <FaLaptopCode className="mt-1 text-xl text-indigo-500" />
                 <div>
                   <p className="font-medium text-gray-700">
                     Web Development Projects

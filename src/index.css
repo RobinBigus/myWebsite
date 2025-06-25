@@ -35,4 +35,16 @@
   .link-hover-dark {
     @apply text-gray-400 hover:text-white transition-colors;
   }
+
+  .nav-link {
+    @apply relative inline-block;
+  }
+
+  .nav-link::after {
+    @apply content-[''] absolute w-0 h-0.5 bottom-0 left-0 bg-current transition-all duration-300;
+  }
+
+  .nav-link:hover::after {
+    @apply w-full;
+  }
 }
