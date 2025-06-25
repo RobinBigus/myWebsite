@@ -37,7 +37,7 @@ const Header = () => {
               key={item.name}
               href={item.href}
               onClick={(e) => scrollToSection(e, item.href)}
-              className="text-gray-500 hover:text-gray-900 transition-colors text-lg"
+              className="nav-link text-gray-500 hover:text-gray-900 transition-colors text-lg"
             >
               {item.name}
             </a>

@@ -18,7 +18,7 @@ const Footer = () => {
                   <a
                     href={link.href}
                     onClick={(e) => scrollToSection(e, link.href)}
-                    className="link-hover-dark"
+                    className="nav-link link-hover-dark"
                   >
                     {link.name}
                   </a>
