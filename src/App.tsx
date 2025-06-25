@@ -1,12 +1,21 @@
-function App() {
+import About from "./components/About";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Technologies from "./components/Technologies";
 
+const App = () => {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    </>
-  )
-}
+    <div className="min-h-screen bg-white">
+      <Header />
+      <Hero />
+      <About />
+      <Technologies />
+      <Contact />
+      <Footer />
+    </div>
+  );
+};
 
-export default App
+export default App;

@@ -1,1 +1,38 @@
 @import "tailwindcss";
+
+@layer components {
+  .gradient-bar-horizontal {
+    @apply absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-500 to-purple-600;
+  }
+
+  .gradient-bar-vertical {
+    @apply relative pl-3 pr-3 before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-indigo-500 before:to-purple-600 before:rounded-full hover:before:from-indigo-600 hover:before:to-purple-700 transition-colors;
+  }
+
+  .section-container {
+    @apply mx-auto px-4 max-w-7xl sm:px-6 lg:px-8;
+  }
+  .section-heading {
+    @apply text-center mb-16;
+  }
+
+  .section-title {
+    @apply text-3xl font-extrabold text-gray-900 sm:text-4xl;
+  }
+
+  .section-subtitle {
+    @apply mt-4 mx-auto max-w-2xl text-xl text-gray-500;
+  }
+
+  .hover-card {
+    @apply relative bg-white shadow-xl rounded-lg transform transition-all hover:scale-[1.02] hover:shadow-2xl duration-300 p-5;
+  }
+
+  .link-hover-light {
+    @apply text-gray-400 hover:text-gray-600 transition-colors;
+  }
+
+  .link-hover-dark {
+    @apply text-gray-400 hover:text-white transition-colors;
+  }
+}
